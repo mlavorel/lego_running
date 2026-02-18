@@ -1,0 +1,139 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  height: 100%;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  height: 100%;
+}
+
+.sidebar {
+  border-right: 1px solid #dbeafe;
+  padding: 12px;
+  overflow: auto;
+  background: #f8fafc;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tabs button {
+  border: 1px solid #cbd5e1;
+  background: white;
+  padding: 8px;
+}
+
+.tabs .active {
+  background: #dbeafe;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list li {
+  border: 1px solid #cbd5e1;
+  padding: 8px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.list li button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.row-buttons button,
+button,
+input {
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.secondary {
+  background: #e2e8f0;
+}
+
+.file-input {
+  border: 1px dashed #94a3b8;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.file-input input {
+  display: none;
+}
+
+.file-input.inline {
+  display: inline-block;
+}
+
+.helper {
+  margin: 0;
+  font-size: 13px;
+  color: #334155;
+}
+
+.empty-state {
+  border: 1px dashed #94a3b8;
+  border-radius: 6px;
+  padding: 12px;
+  color: #334155;
+}
+
+.stats {
+  margin-top: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.message {
+  color: #15803d;
+  font-weight: 600;
+}
+
+main {
+  position: relative;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
